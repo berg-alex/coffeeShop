@@ -1,0 +1,117 @@
+* { 
+	box-sizing: border-box;
+	color: white;
+	
+}
+
+html {
+  /*background: #FFE5D9;*/
+  width: 100%;
+}
+
+body {
+  background: #FFE5D9;
+}
+
+header	{
+	text-align: center;
+	background: #FFCAD4;
+	color: white;
+	height: 200px;
+	font-size: 10%;
+	margin-right: none;
+	padding-right: none;
+}
+
+h1 {
+	/*font-size: 40px;*/
+}
+
+img.logo{
+	width: 10%;
+	float: left;
+	top: 20px;
+	position: fixed;
+	display: block;
+	margin-left: 20px;
+	/*margin-left: 20px;*/
+}
+
+main {
+	text-align: center;
+}
+
+.logo {
+	width: 400px;
+}
+.myResults {
+	text-align: center;
+	border: solid 2px #D8E2DC;
+	/*padding: 5px;*/
+	position: relative;
+	top: 20px;
+}
+
+.myButton {
+	color: black;
+	position: relative;
+	/*top: -130px;*/
+	margin: auto;
+	width: 100px;
+	height: 37px;
+	display: block;
+	background: #D8E2DC;
+	top: 15px;
+}
+
+.js-search-results {
+	margin: auto;
+	width: 400px;
+	position: relative;
+	color: #D8E2DC;
+}
+
+label {
+	color: green;
+	font-size: x-small;
+	position: relative;
+	top: -130px;
+}
+
+footer {
+	/*text-align: center;*/
+	font-size: xx-small;
+	color: #9D8189;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 100%;
+}
+span {
+	font-size: small;
+	color: #9D8189;
+	/*text-align: center;*/
+}
+
+button {
+	color: black;
+	text-align: center;
+	border: blue 2px solid;
+	width: 100%;
+	/*border-radius: 50px;*/
+	font-family: 'Indie Flower', cursive;
+	/*position: absolute;*/
+	
+}
+
+h2 {
+	color: #9D8189;
+}
+
+p {
+	display: block;
+	width: 100%;
+	color: #9D8189;
+	margin: auto;
+}
+
