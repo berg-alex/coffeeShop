@@ -1,7 +1,6 @@
 * { 
 	box-sizing: border-box;
 	color: white;
-	
 }
 
 html {
@@ -47,6 +46,10 @@ main {
 .myResults {
 	text-align: center;
 	border: solid 2px #D8E2DC;
+	border-width: 100px;
+	border-radius: 100px;
+	margin: auto;
+	width: 500px;
 	/*padding: 5px;*/
 	position: relative;
 	top: 20px;
@@ -62,11 +65,18 @@ main {
 	display: block;
 	background: #D8E2DC;
 	top: 15px;
+	border-radius: 6px;
+  transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear;
+}
+button:hover {
+	border-radius: 50%;
 }
 
 .js-search-results {
 	margin: auto;
-	width: 400px;
+	/*width: 400px;*/
 	position: relative;
 	color: #D8E2DC;
 }
@@ -82,7 +92,7 @@ footer {
 	/*text-align: center;*/
 	font-size: xx-small;
 	color: #9D8189;
-	position: absolute;
+	position: relative;
 	text-align: center;
 	width: 100%;
 	top: 100%;
