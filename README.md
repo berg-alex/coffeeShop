@@ -2,8 +2,6 @@
 search local coffee shops with this web app
 
 
-
-
 First click the coffeeShop button
 <br>
 ![Alt text](https://user-images.githubusercontent.com/25781171/33039648-83a0c198-cded-11e7-8e57-41d30014006c.png)
