@@ -4,11 +4,11 @@ search local coffee shops with this web app
 
 First click the coffeeShop button
 <br>
-![Alt text](https://user-images.githubusercontent.com/25781171/33039648-83a0c198-cded-11e7-8e57-41d30014006c.png)
+![Alt text](https://user-images.githubusercontent.com/25781171/33093474-eb6d1d66-ceb1-11e7-8011-fc967a4660f3.png)
 <br>
 Allow coffeeShop to access your location
 <br>
-![Alt text](https://user-images.githubusercontent.com/25781171/33039646-83625b56-cded-11e7-9d94-6f30a4a56c82.png)
+![Alt text](https://user-images.githubusercontent.com/25781171/33093476-eba8602e-ceb1-11e7-938c-34b40e4cfa06.png)
 See coffee shops near you!
 <br>
-![Alt text](https://user-images.githubusercontent.com/25781171/33039647-838063da-cded-11e7-83d2-b587d9ff84ff.png)
+![Alt text](https://user-images.githubusercontent.com/25781171/33093475-eb8d63be-ceb1-11e7-8538-d087d6eb1dbf.png)
