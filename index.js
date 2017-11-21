@@ -27,7 +27,8 @@ function renderResult(result) {
   
 }
 
-// getDataFromApi not being called ??
+// 
+// api radius measured in meters
 
 function getDataFromApi(searchTerm, lat, lng, displaySearchData) {
   console.log("getDataFromApi is being called");
@@ -51,18 +52,14 @@ function getDataFromApi(searchTerm, lat, lng, displaySearchData) {
 function displaySearchData(data) {
   console.log("searchdata works");
   const results = data.response.venues.map((item, index) => {
-    // console.log("Item = ", item);
     const requestURL = coffeeSQUARE_PHOTO_URL + item.id + "/photos";
     $.getJSON(requestURL, authParam, function(photoData){
-      //console.log("photo has arrived", photoData.response.photos.items);
       const photo = photoData.response.photos.items[0];
       if (photo) {
         const imageUrl = photo.prefix + "width100" + photo.suffix;
         $("#" + item.id).attr("src", imageUrl);
         console.log(photo.prefix + "width100" + photo.suffix);
-        //console.log(photo);
       }
-      //return `<img src= ${coffeeSQUARE_PHOTO_URL.item.id.photos.items.prefix.suffix}>`;
     });
     return renderResult(item);
   });
@@ -80,8 +77,6 @@ function watchSubmit() {
     // clear out the input
     queryTarget.val("");
     getLocation();
-    // getDataFromApi();  
-    // console.log();
   });
 }
 
@@ -92,8 +87,6 @@ function getLocation() {
     timeout: 5000,
     maximumAge: 0
   };
-
-  // document.addEventListener("DOMContentLoaded", function(event) {
     
 
   if (navigator.geolocation) {
@@ -107,17 +100,11 @@ function getLocation() {
     console.log("Latitude is", lat);
     console.log("Longitude is", lng);
     getDataFromApi("coffee", lat, lng, displaySearchData);
-    // let latParagraph = document.getElementById("lat");
-    // let lngParagraph = document.getElementById("lng");
-    // latParagraph.innerText = lat;
-    // lngParagraph.innerText = lng;
   }
 
   function error(message) {
     console.log("Geolocator failed:", message);
   }
-    
-  // });
 
 }
 
