@@ -68,6 +68,13 @@ function displaySearchData(data) {
 
 }
 
+$body = $("body");
+
+$(document).on({
+    ajaxStart: function() { $body.addClass("loading");    },
+     ajaxStop: function() { $body.removeClass("loading"); }    
+});
+
 function watchSubmit() {
   $('#myButton').click(event => {
     event.preventDefault();
