@@ -8,9 +8,16 @@ html {
   width: 100%;
 }
 
+input {
+	position: relative;
+	top: 30px;
+}
+
 body {
   background: #FFE5D9;
 }
+
+
 
 header	{
 	text-align: center;
@@ -86,10 +93,11 @@ button:hover {
 }
 
 label {
-	color: green;
-	font-size: x-small;
+	color: #9D8189;
+	font-size: x-large;
 	position: relative;
-	top: -130px;
+	top: 10px;
+	left: 60px;
 }
 
 footer {
