@@ -11,6 +11,7 @@ html {
 input {
 	position: relative;
 	top: 30px;
+	font-family: 'Indie Flower', cursive;
 }
 
 body {
@@ -21,8 +22,10 @@ body {
 
 header	{
 	text-align: center;
-	background: #FFCAD4;
-	color: #9D8189;
+	background-image: url("https://preview.ibb.co/iVnJAG/coffee.jpg");
+	background: opacity: 0.3;
+	/*color: #9D8189;*/
+	color: white;
 	height: 200px;
 	font-size: 10%;
 	margin-right: none;
@@ -31,6 +34,7 @@ header	{
 
 h1 {
 	/*font-size: 40px;*/
+	font-family: 'Indie Flower', cursive;
 }
 
 div.desc {
@@ -57,13 +61,18 @@ main {
 .myResults {
 	text-align: center;
 	border: solid 2px #D8E2DC;
-	border-width: 100px;
+	border-width: 5px;
 	border-radius: 100px;
+	padding: 10px;
 	margin: auto;
 	width: 500px;
 	/*padding: 5px;*/
 	position: relative;
 	top: 20px;
+}
+
+.Desc {
+	font-family: 'Indie Flower', cursive;
 }
 
 .myButton {
@@ -128,6 +137,7 @@ button {
 
 h2 {
 	color: #9D8189;
+	font-family: 'Indie Flower', cursive;
 }
 
 p {
@@ -135,6 +145,7 @@ p {
 	width: 100%;
 	color: #9D8189;
 	margin: auto;
+	font-family: 'Indie Flower', cursive;
 }
 
 

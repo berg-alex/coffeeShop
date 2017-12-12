@@ -18,9 +18,10 @@ function renderResult(result) {
   return `
     <div class="myResults">
       <h2>${result.name}</h2>
+      <p><img src="" class="myImg" id="${result.id}"></p>
       <p>${result.location.formattedAddress}</p>
       <p>${((result.location.distance)*0.000621371).toFixed(2)} miles <br> (from current location)</p>
-      <p><img src="" class="myImg" id="${result.id}"></p>
+      
     </div>
     <br>
   `;
