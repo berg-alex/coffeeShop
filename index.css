@@ -10,8 +10,10 @@ html {
 
 input {
 	position: relative;
-	top: 30px;
+	top: 40px;
+	left: -10px;
 	font-family: 'Indie Flower', cursive;
+	font-size: large;
 }
 
 body {
@@ -48,7 +50,9 @@ img.logo{
 	position: fixed;
 	display: block;
 	margin-left: 20px;
-	/*margin-left: 20px;*/
+	opacity: 0.3;
+	/*mar
+	gin-left: 20px;*/
 }
 
 main {
@@ -73,10 +77,19 @@ main {
 
 .Desc {
 	font-family: 'Indie Flower', cursive;
+	font-size: small;
+}
+
+#myButton {
+	color: black;
+	border: black;
+}
+#myButton:hover {
+	background: #9D8189;
 }
 
 .myButton {
-	color: black;
+	
 	position: relative;
 	/*top: -130px;*/
 	margin: auto;
@@ -92,6 +105,7 @@ main {
 }
 button:hover {
 	border-radius: 50%;
+
 }
 
 .js-search-results {
@@ -105,6 +119,7 @@ label {
 	color: #9D8189;
 	font-size: x-large;
 	position: relative;
+	font-family: 'Indie Flower', cursive;
 	top: 10px;
 	left: 60px;
 }
@@ -117,6 +132,7 @@ footer {
 	text-align: center;
 	width: 100%;
 	top: 100%;
+	font-family: 'Indie Flower', cursive;
 }
 span {
 	font-size: small;
