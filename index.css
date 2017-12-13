@@ -10,10 +10,10 @@ html {
 
 input {
 	position: relative;
-	top: 40px;
+	top: 30px;
 	left: -10px;
 	font-family: 'Indie Flower', cursive;
-	font-size: large;
+	
 }
 
 body {
@@ -28,7 +28,7 @@ header	{
 	background: opacity: 0.3;
 	/*color: #9D8189;*/
 	color: white;
-	height: 200px;
+	height: 250px;
 	font-size: 10%;
 	margin-right: none;
 	padding-right: none;
