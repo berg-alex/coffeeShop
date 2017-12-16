@@ -20,6 +20,11 @@ body {
   background: #FFE5D9;
 }
 
+.cityButton {
+	width: 100px;
+	position: relative;
+	top: 30px;
+}
 
 
 header	{

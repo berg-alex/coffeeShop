@@ -28,6 +28,14 @@ function renderResult(result) {
   
 }
 
+
+
+$( ".cityButton" ).click(function() {
+  let cityLocation = $("#cityInput").val();
+  getDataFromApi2("coffee", displaySearchData, cityLocation);
+  });
+
+
 // 
 // api radius measured in meters
 
@@ -46,12 +54,35 @@ function getDataFromApi(searchTerm, lat, lng, displaySearchData) {
     
   }
   console.log("getJSON is being called");
+  //callback is function that only gets executed when a certain condition is met.
+
+  //create a second function getdatafromapi
   $.getJSON(coffeeSQUARE_SEARCH_URL, origQuery, displaySearchData);
+}
+
+function getDataFromApi2(searchTerm, callback, location) {
+  console.log("getDataFromApi2 is being called");
+  
+  const origQuery = {
+    q: searchTerm,
+    client_id: '3WG5JN5H5WJ3NBWFW4QPDQHFYBA3QODYSMDX5PMEXC1ZCTLL',
+    client_secret: 'HASDCGTNQIAN4UVJO0F4DNG5G1VBCMRZZI3NAEV1DDPFRQTL',
+    query: 'coffee',
+    v: "20171031",
+    radius: "8046.72",
+    near: location
+  }
+
+  console.log("getJSON is being called");
+  //callback is function that only gets executed when a certain condition is met.
+
+  //create a second function getdatafromapi
+  $.getJSON(coffeeSQUARE_SEARCH_URL, origQuery, callback);
 }
 
 
 function displaySearchData(data) {
-  console.log("searchdata works");
+  console.log(data);
   const results = data.response.venues.map((item, index) => {
     const requestURL = coffeeSQUARE_PHOTO_URL + item.id + "/photos";
     $.getJSON(requestURL, authParam, function(photoData){
@@ -85,6 +116,8 @@ function watchSubmit() {
     // clear out the input
     queryTarget.val("");
     getLocation();
+
+
   });
 }
 
