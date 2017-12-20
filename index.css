@@ -13,17 +13,16 @@ input {
 	top: 30px;
 	left: -10px;
 	font-family: 'Indie Flower', cursive;
+	background: #D8E2DC;
+	border: black 1px solid;
+	border-radius: 6px;
+	height: 20px;
+	text-align: center;
 	
 }
 
 body {
   background: #FFE5D9;
-}
-
-.cityButton {
-	width: 100px;
-	position: relative;
-	top: 30px;
 }
 
 
@@ -93,25 +92,39 @@ main {
 	background: #9D8189;
 }
 
-.myButton {
-	
+.cityButton {
+	background: #D8E2DC;
+	height: 20px;
+	width: 100px;
 	position: relative;
-	/*top: -130px;*/
+	top: 30px;
+	border: black 1px solid;
+	border-radius: 6px;
+}
+
+.cityButton:hover {
+	background: #9D8189;
+}
+
+.myButton {
+	color: black;
+	position: relative;
 	margin: auto;
 	width: 200px;
-	height: 37px;
+	/*height: 36px;*/
 	display: block;
 	background: #D8E2DC;
 	top: 15px;
 	border-radius: 6px;
-  transition-property: background, border-radius;
-  transition-duration: .2s, 1s;
-  transition-timing-function: linear;
+	border: black 1px solid;
 }
-button:hover {
-	border-radius: 50%;
 
+.myButton:hover {
+	border: black 1px solid;
 }
+/*button:hover {
+
+}*/
 
 .js-search-results {
 	margin: auto;
@@ -121,7 +134,7 @@ button:hover {
 }
 
 label {
-	color: #9D8189;
+	color: white;
 	font-size: x-large;
 	position: relative;
 	font-family: 'Indie Flower', cursive;

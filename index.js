@@ -28,11 +28,24 @@ function renderResult(result) {
   
 }
 
+function renderResult2(result) {
+  // function to render results
+  return `
+    <div class="myResults">
+      <h2>${result.name}</h2>
+      <p><img src="" class="myImg" id="${result.id}"></p>
+      <p>${result.location.formattedAddress}</p>
+      
+    </div>
+    <br>
+  `;
+  
+}
 
 
 $( ".cityButton" ).click(function() {
   let cityLocation = $("#cityInput").val();
-  getDataFromApi2("coffee", displaySearchData, cityLocation);
+  getDataFromApi2("coffee", displaySearchData2, cityLocation);
   });
 
 
@@ -94,6 +107,25 @@ function displaySearchData(data) {
       }
     });
     return renderResult(item);
+  });
+  console.log(results);
+  $('.js-search-results').html(results);
+
+}
+
+function displaySearchData2(data) {
+  console.log(data);
+  const results = data.response.venues.map((item, index) => {
+    const requestURL = coffeeSQUARE_PHOTO_URL + item.id + "/photos";
+    $.getJSON(requestURL, authParam, function(photoData){
+      const photo = photoData.response.photos.items[0];
+      if (photo) {
+        const imageUrl = photo.prefix + "width100" + photo.suffix;
+        $("#" + item.id).attr("src", imageUrl);
+        console.log(photo.prefix + "width100" + photo.suffix);
+      }
+    });
+    return renderResult2(item);
   });
   console.log(results);
   $('.js-search-results').html(results);
